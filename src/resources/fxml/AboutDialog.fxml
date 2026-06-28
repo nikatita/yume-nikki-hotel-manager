@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+
+<!--
+    AboutDialog.fxml
+    ────────────────────────────────────────────────────────────────
+    This file was authored for Scene Builder and loaded at runtime
+    via FXMLLoader.  It renders the "About / Credits" overlay that
+    appears when the user clicks the [?] button in the top-bar.
+
+    Controller : controller.AboutController
+-->
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.AboutController"
+      spacing="18"
+      style="-fx-background-color: #1a0d1f; -fx-padding: 32 36 28 36;">
+
+    <!-- ── TITLE ROW ─────────────────────────────────────────── -->
+    <HBox alignment="CENTER" spacing="12">
+
+        <Label text="夢日記  HOTEL"
+               style="-fx-font-family: 'Press Start 2P', 'Courier New', monospace;
+                      -fx-font-size: 13px;
+                      -fx-text-fill: #d4a0e8;
+                      -fx-effect: dropshadow(gaussian,#c8a0e0,14,0.5,0,0);" />
+    </HBox>
+
+    <!-- ── PIXEL DIVIDER ─────────────────────────────────────── -->
+    <HBox prefHeight="2"
+          style="-fx-background-color: #7a4a9a;"
+          maxWidth="Infinity" />
+
+    <!-- ── INFO GRID ──────────────────────────────────────────── -->
+    <GridPane hgap="20" vgap="10">
+
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="0"
+               text="VERSION"
+               style="-fx-font-family: 'Press Start 2P', monospace;
+                      -fx-font-size: 7px; -fx-text-fill: #c8a0e0;" />
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="1"
+               text="1.0-SNAPSHOT"
+               style="-fx-font-family: 'VT323', monospace;
+                      -fx-font-size: 18px; -fx-text-fill: #ede0f5;" />
+
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="0"
+               text="BUILD"
+               style="-fx-font-family: 'Press Start 2P', monospace;
+                      -fx-font-size: 7px; -fx-text-fill: #c8a0e0;" />
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="1"
+               text="Maven + JavaFX 21"
+               style="-fx-font-family: 'VT323', monospace;
+                      -fx-font-size: 18px; -fx-text-fill: #ede0f5;" />
+
+        <Label GridPane.rowIndex="2" GridPane.columnIndex="0"
+               text="STORAGE"
+               style="-fx-font-family: 'Press Start 2P', monospace;
+                      -fx-font-size: 7px; -fx-text-fill: #c8a0e0;" />
+        <Label GridPane.rowIndex="2" GridPane.columnIndex="1"
+               text="CSV flat file (hotel_rooms.csv)"
+               style="-fx-font-family: 'VT323', monospace;
+                      -fx-font-size: 18px; -fx-text-fill: #ede0f5;" />
+
+        <Label GridPane.rowIndex="3" GridPane.columnIndex="0"
+               text="THEME"
+               style="-fx-font-family: 'Press Start 2P', monospace;
+                      -fx-font-size: 7px; -fx-text-fill: #c8a0e0;" />
+        <Label GridPane.rowIndex="3" GridPane.columnIndex="1"
+               text="Yume Nikki  (ゆめにっき)"
+               style="-fx-font-family: 'VT323', monospace;
+                      -fx-font-size: 18px; -fx-text-fill: #ede0f5;" />
+
+    </GridPane>
+
+    <!-- ── PIXEL DIVIDER ─────────────────────────────────────── -->
+    <HBox prefHeight="2"
+          style="-fx-background-color: #3a2050;"
+          maxWidth="Infinity" />
+
+    <!-- ── FLAVOUR TEXT ───────────────────────────────────────── -->
+    <Label text="▌ all guests are welcome in the dream ▐"
+           wrapText="true"
+           style="-fx-font-family: 'VT323', monospace;
+                  -fx-font-size: 16px;
+                  -fx-text-fill: #7a6090;
+                  -fx-alignment: CENTER;" />
+
+    <!-- ── CLOSE BUTTON ──────────────────────────────────────── -->
+    <HBox alignment="CENTER">
+        <Button fx:id="closeBtn"
+                text="CLOSE"
+                onAction="#handleClose"
+                style="-fx-background-color: #120a18;
+                       -fx-border-color: #a0b4f0;
+                       -fx-border-width: 2;
+                       -fx-text-fill: #a0b4f0;
+                       -fx-font-family: 'Press Start 2P', monospace;
+                       -fx-font-size: 8px;
+                       -fx-background-radius: 0;
+                       -fx-padding: 10 24 10 24;
+                       -fx-cursor: hand;" />
+    </HBox>
+
+</VBox>

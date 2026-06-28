@@ -1,0 +1,6 @@
+name,roomNo,checkInDate,checkOutDate,breakfast,extraBed,parking,totalBill
+nikita,101,2026-04-02,2026-04-02,false,false,true,6300.00
+mukta,102,2026-04-02,2026-04-02,true,false,false,6000.00
+twinkatron,201,2026-04-02,—,false,false,true,0.00
+twinty,202,2026-04-02,—,false,true,false,0.00
+nigender,405,2026-04-02,—,true,false,true,0.00
